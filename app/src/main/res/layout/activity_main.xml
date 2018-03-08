@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_cafe1"
+    android:orientation="vertical"
+    tools:context="com.example.solar.quizproject.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--TextBanner-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/texture2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/appName"
+                    android:textColor="#FFF"
+                    android:textSize="40sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="0dp"
+                android:padding="0dp"
+                android:background="@drawable/coffe_beans"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="290dp"
+                    android:gravity="center"
+                    android:background="#15f4fff8"
+                    android:text="@string/welcome"
+                    android:textColor="#FFF"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scroll"
+                    android:textSize="30sp"
+                    android:background="#9002872e"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:paddingVertical="30sp"
+                    android:textColor="#FFF"
+                    android:layout_marginHorizontal="60dp"/>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:background="#9502872e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="20dp"
+                    android:padding="0dp"
+                    android:layout_margin="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/scroll3"
+                    />
+            </LinearLayout>
+
+            <!--First Qustion Set-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="30dp"
+                android:background="#80000000">
+
+                <LinearLayout
+                    android:id="@+id/set1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question1"
+                        android:textColor="#FFF"
+                        android:gravity="center"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:text="@string/q1"
+                        android:textColor="#FFF"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="223dp"
+                        android:layout_marginVertical="25dp"
+                        android:src="@drawable/image1" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioGroup1">
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/men"
+                            android:textSize="30sp"
+                            android:textColor="#FFF"
+                            android:id="@+id/answer11"
+                            android:tag="1"
+                            android:background="@color/red"/>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/women"
+                            android:textSize="30sp"
+                            android:textColor="#FFF"
+                            android:id="@+id/answer12"
+                            android:tag="2"
+                            android:background="@color/blue"/>
+                    </RadioGroup>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/check"
+                        android:background="#0dad2d"
+                        android:layout_margin="30dp"
+                        android:id="@+id/check1"
+                        android:onClick="check_button"
+                        android:tag="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--End first set-->
+
+            <!--Second Questionset-->
+            <LinearLayout style="@style/questionSet">
+
+                <LinearLayout
+                    android:id="@+id/set2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question2"
+                        android:textColor="#FFF"
+                        android:gravity="center"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:text="@string/q2"
+                        android:textColor="#FFF"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="223dp"
+                        android:layout_marginVertical="25dp"
+                        android:src="@drawable/image2" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioGroup2">
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer21"
+                            android:textSize="25sp"
+                            android:textColor="#FFF"
+                            android:id="@+id/answer21"
+                            android:tag="1"
+                            android:background="#40d50000" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer22"
+                            android:textSize="25sp"
+                            android:textColor="#FFF"
+                            android:id="@+id/answer22"
+                            android:background="#401e88e5"/>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer23"
+                            android:textSize="30sp"
+                            android:textColor="#FFF"
+                            android:id="@+id/answer23"
+                            android:background="#4043a047"/>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answer24"
+                            android:textSize="30sp"
+                            android:textColor="#FFF"
+                            android:id="@+id/answer24"
+                            android:background="#40ffeb3b"/>
+                    </RadioGroup>
+
+                    <Button
+                        android:text="@string/check"
+                        android:id="@+id/check2"
+                        android:onClick="check_button"
+                        android:tag="2"
+                        style="@style/checkButton" />
+                </LinearLayout>
+
+            </LinearLayout>  <!--End second set-->
+
+            <!--Third Question set-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="30dp"
+                android:background="#80000000">
+
+                <LinearLayout
+                    android:id="@+id/set3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question3"
+                        android:textColor="#FFF"
+                        android:gravity="center"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:text="@string/q3"
+                        android:textColor="#FFF"
+                        android:textSize="22sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="109dp"
+                        android:layout_marginVertical="25dp"
+                        android:src="@drawable/image3" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:id="@+id/editText1"
+                        android:textColor="#000"
+                        />
+
+                    <Button
+                        android:text="@string/check"
+                        android:id="@+id/check3"
+                        android:onClick="check_button"
+                        android:tag="3"
+                        style="@style/checkButton"
+                        />
+                </LinearLayout>
+
+            </LinearLayout> <!--End third set-->
+
+            <!--Fourth Question Set-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="30dp"
+                android:background="#80000000">
+
+                <LinearLayout
+                    android:id="@+id/set4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question4"
+                        android:textColor="#FFF"
+                        android:gravity="center"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:text="@string/q4"
+                        android:textColor="#FFF"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="223dp"
+                        android:layout_marginVertical="25dp"
+                        android:src="@drawable/image4"
+                        android:layout_gravity="center"/>
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answer41"
+                        android:id="@+id/answer41"
+                        android:background="@color/blue"/>
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answer42"
+                        android:background="@color/red"
+                        android:id="@+id/answer42"/>
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answer43"
+                        android:id="@+id/answer43"
+                        android:background="@color/green"/>
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answer44"
+                        android:id="@+id/answer44"
+                        android:background="@color/yellow"/>
+
+                    <Button
+                        android:text="@string/check"
+                        android:id="@+id/check1set"
+                        android:onClick="check_button"
+                        android:tag="4"
+                        style="@style/checkButton"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--End of fourth set-->
+
+            <!--Fifth Qustion Set-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="30dp"
+                android:background="#80000000">
+
+                <LinearLayout
+                    android:id="@+id/set5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/question5"
+                        android:textColor="#FFF"
+                        android:gravity="center"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:text="@string/q5"
+                        android:textColor="#FFF"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="223dp"
+                        android:layout_marginVertical="25dp"
+                        android:src="@drawable/marti" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioGroup3">
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:textSize="30sp"
+                            android:textColor="#FFF"
+                            android:id="@+id/answer51"
+                            android:tag="1"
+                            android:background="@color/blue"/>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="50"
+                            android:textSize="30sp"
+                            android:textColor="#FFF"
+                            android:id="@+id/answer52"
+                            android:tag="2"
+                            android:background="@color/red"/>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="25"
+                            android:textSize="30sp"
+                            android:textColor="#FFF"
+                            android:id="@+id/answer53"
+                            android:tag="3"
+                            android:background="@color/green"/>
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="10"
+                            android:textSize="30sp"
+                            android:textColor="#FFF"
+                            android:id="@+id/answer54"
+                            android:tag="4"
+                            android:background="@color/yellow"/>
+                    </RadioGroup>
+
+                    <Button
+                        android:text="@string/check"
+                        android:id="@+id/check5"
+                        android:onClick="check_button"
+                        android:tag="5"
+                        style="@style/checkButton"/>
+                </LinearLayout>
+            </LinearLayout> <!--End first set-->
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

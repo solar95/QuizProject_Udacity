@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">QuizProject</string>
+    <string name="appName">Coffee Quiz</string>
+    <string name="question1">Question 1</string>
+    <string name="q1">Who the coffee is more beneficial for?</string>
+    <string name="men">Men</string>
+    <string name="women">Women</string>
+    <string name="check">Check</string>
+    <string name="question2">Question 2</string>
+    <string name="q2">What is arabica?</string>
+    <string name="answer21">A technique for roast coffee beans</string>
+    <string name="answer22">A type off coffee plant</string>
+    <string name="answer23">A coffee brand</string>
+    <string name="answer24">A coffee drink</string>
+    <string name="question3">Question 3</string>
+    <string name="q3">Which is the country with the highest consume per capita of coffee?</string>
+    <string name="correct">Correct</string>
+    <string name="wrong">Wrong</string>
+    <string name="q4">Capuchino is made out of</string>
+    <string name="question4">Question 4</string>
+    <string name="answer41">Expresso</string>
+    <string name="answer42">Milk</string>
+    <string name="answer43">Milk Foam</string>
+    <string name="answer44">Chocolate</string>
+    <string name="welcome">Welcome to the coffee Quiz
+Instructions: Scroll Down , Select an option and then press check</string>
+    <string name="scroll">Scroll Down</string>
+    <string name="q5">How many cups are the lethal dose of caffeine?</string>
+    <string name="question5">Question 5</string>
+
+
+
+
+</resources>
